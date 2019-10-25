@@ -1,0 +1,870 @@
+* {
+  margin:0;
+  padding:0;
+ }
+
+ .btn-primary {
+  color: #fff;
+  background-color: rgb(194, 32, 32);
+  border-color: rgb(158, 24, 24);
+}
+
+ .carousel-control-next-icon {
+  background-image: url(https://image.flaticon.com/icons/png/512/98/98673.png);
+}
+.carousel-control-next-icon, .carousel-control-prev-icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+}
+.carousel-control-next, .carousel-control-prev {
+  position: absolute;
+  top: 45px;
+  bottom: 0;
+  z-index: 1;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #fff;
+  width: 15%;
+  text-align: center;
+  transition: opacity .15s ease;
+}
+.carousel-control-prev-icon {
+  background-image: url(https://image.flaticon.com/icons/png/512/17/17264.png);
+}
+.carousel-control-prev-icon, .carousel-control-prev-icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+}
+.carousel-control-prev, .carousel-control-prev {
+  position: absolute;
+  top: 50px;
+  bottom: 0;
+  z-index: 1;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #fff;
+  width: 15%;
+  text-align: center;
+  transition: opacity .15s ease;
+}
+
+o{
+  padding-top: 5px;
+}
+h5{
+  padding-top: 10px;
+color: rgb(110, 204, 110);
+}
+ #header {
+  font-family:Arial, Helvetica, sans-serif;
+  position:fixed;
+  width: 100%;
+  text-align: center;
+ }
+ .nav{
+  float: left;
+ }
+ .nav li ul {
+  display:none;
+  position: absolute;
+  width:150px;
+ }
+ ul, ol {
+  list-style:none;
+ }
+ .nav li a {
+  background-color:rgb(94, 189, 178);
+  color:rgb(0, 0, 0);
+  height: 10vh;
+  padding: 3vh;
+  display:block;
+  border: black 1px;
+  font-size: 15px;
+ }
+ .nav li a:hover {
+  background-color:#e42841;
+ }
+ #menu{
+  width: 150px;
+ }
+ .seccion-menu{
+  height: 10vh;
+  width: 100%;
+  background-color: #e42841;
+  opacity: 0.9;
+  position:fixed;
+  z-index: 1;
+ }
+ .imagen-logo {
+  width: 75px;
+  height: 75px;
+  margin-top: -7px;
+ }
+ .logo{
+  float: right;
+ }
+ .seccion-inicio{
+  background: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url("https://http2.mlstatic.com/relojes-blandos-salvador-dali-pintura-oleo-reproduccion-D_NQ_NP_753211-MLM20504066676_112015-F.jpg");
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+  .texto1 {
+    text-shadow: 5px 4px 2px rgb(228, 40, 65);
+    opacity: 0.8;
+    color: white;
+    text-align: center;
+    margin-top: 2vh;
+  }
+  .texto2{
+    color: black;
+    text-align: center;
+  }
+  
+  
+ /*para Compu*/
+ @media screen and (max-width: 4000px) and (min-width: 1200px){
+
+  .tituloObj {
+    text-align: center;
+    padding-top: 10vh;
+  }
+  .tituloPro {
+    text-shadow: 5px 4px 2px rgb(224, 149, 8);
+  }
+  .objetivo1 {
+    border-bottom: 6px solid #e09508;
+    background-color: lightgrey;
+    margin-right: 2.5vh;
+  }
+  .objetivoTitulo {
+    text-shadow: 3px 2px 1px rgb(224, 149, 8);
+  }
+  .objetivoTitulo2 {
+    text-shadow: 3px 2px 1px rgb(224, 149, 8);
+  }
+
+  .objetivo2 {
+    border-bottom: 6px solid #e09508;
+    background-color: lightgrey;
+    margin-left: 2.5vh;
+    
+  }
+  .info1-5 {
+    padding-top: 20px;
+    font-family: 'Inconsolata', monospace;
+    font-size: 18px;
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+
+  }
+
+  .seccion-objetivos{
+    height: 100vh;
+    background: linear-gradient(rgb(248, 121, 248),rgb(255, 255, 255));
+  }
+   /*start animation*/
+.animated-shadow {
+  color: #ffffff;
+  font: normal 50px Varela Round, sans-serif;
+  height: 120px;
+  left: 0;
+  letter-spacing: 5px;
+  text-align: center;
+  text-transform: uppercase;
+  width: 100%;
+  animation: move linear 2000ms infinite;
+  z-index: 2
+ }
+ /*Animación para rotar las sombras*/
+ @keyframes move {
+  0% {
+    text-shadow:
+      2px -2px 0 #da0641,
+      1px -3px 0 #da0641,
+      2px -2px 0 #da0641,
+      1px -1px 0 #da0641,
+      -3px 4px 0 #13f1fc,
+      -2px 3px 0 #13f1fc,
+      -1px 2px 0 #13f1fc,
+      -1px 1px 0 #13f1fc
+    ;
+  }
+  25% {
+    text-shadow:
+      -3px -2px 0 #13f1fc,
+      -2px -2px 0 #13f1fc,
+      -3px -1px 0 #13f1fc,
+      -2px -0px 0 #13f1fc,
+      -2px 2px 0 #da0641,
+      -2px 1px 0 #da0641,
+      -2px 2px 0 #da0641,
+      -1px 1px 0 #da0641
+    ;
+  }
+  50% {
+    text-shadow:
+      -2px 1px 0 #da0641,
+      -2px 1px 0 #da0641,
+      -2px 2px 0 #da0641,
+      -1px 1px 0 #da0641,
+      1px -1px 0 #13f1fc,
+      1px -1px 0 #13f1fc,
+      2px -2px 0 #13f1fc,
+      1px -1px 0 #13f1fc
+    ;
+  }
+  75% {
+    text-shadow:
+      2px 1px 0 #13f1fc,
+      3px 3px 0 #13f1fc,
+      2px 2px 0 #13f1fc,
+      1px 1px 0 #13f1fc,
+      -2px -0px 0 #da0641,
+      -3px -3px 0 #da0641,
+      -2px -2px 0 #da0641,
+      -1px -1px 0 #da0641
+    ;
+  }
+  100% {
+    text-shadow:
+      1px -2px 0 #da0641,
+      3px -3px 0 #da0641,
+      2px -2px 0 #da0641,
+      1px -1px 0 #da0641,
+      -1px 3px 0 #13f1fc,
+      -3px 3px 0 #13f1fc,
+      -2px 2px 0 #13f1fc,
+      -1px 1px 0 #13f1fc
+    ;
+  }
+ }
+ /*fIN Aniamtion*/
+ 
+   .roww{
+    height: 100%;
+    width: 100%;
+  
+   }
+   .DaliFoto{
+    width: 500px;
+    height: 300px;
+    padding-top: 5px;
+   }
+ .info4{
+  width: 40vh;
+  padding-top: 50px;
+  font-family: 'Inconsolata', monospace;
+  font-size: 20px;
+  text-shadow: 1px 1px 1px rgb(0, 0, 0);
+  
+ }
+ .texto4{
+  padding-top:60px;
+  text-shadow: 4px -2px 2px rgb(255, 0, 140);
+  text-align: center;
+ }
+  
+  .info2{
+    font-family: 'Inconsolata', monospace;
+ font-size: 18px;
+ text-shadow: 1px 1px 1px rgb(0, 0, 0);
+ padding-top:25px ;
+ }
+  
+ .mano{
+  padding-top: 50px;
+  padding-left: 25vh;
+  height: 120vh;
+ }
+  
+   /*carrusel-Compu*/
+   .container{
+     padding-top: 50px;
+   }
+ #carru {
+  font-size: 50px;
+  height :auto;
+  text-align: center;
+  text-shadow: -4px -1px 2px rgb(69, 240, 134);
+  padding-top: 100px;
+  
+ }
+ #carouselExampleCaptions{
+  padding-left: 150px;
+ right: 0%;
+ }
+  .seccion-resultados{
+  background: linear-gradient(rgb(247, 222, 159),rgb(255, 255, 255));
+  height: 150vh;
+  }
+  .row{
+    padding-top: 0vh;
+    padding-left: 50px;
+  }
+  /*Fincarrusel-compu*/
+  
+ /*
+ Empieza a aqui
+ */
+ .row{
+   width: 100%;
+  padding-top: 20vh;
+ }
+ .texto2{
+  border-bottom: rgb(94, 189, 178) 3px solid;
+  border-left: black 3px solid;
+  padding-top:50px;
+  width: 400px;
+  height: 199px;
+  float: left;
+  text-shadow: -3px -3px 2px rgb(94, 189, 178);
+  }
+ .info{
+   border-top:rgb(94, 189, 178)  3px solid;
+  border-right: black 3px solid;
+  width: 630px;
+  height: 190px;
+  float: left;
+  padding-top: 5px;
+  font-family: 'Inconsolata', monospace;
+  font-size: 18px;
+  text-shadow: 1px 1px 1px rgb(0, 0, 0);
+  }
+ .carousel-control-prev{
+  color: black;
+ }
+ .carousel-control-next{
+  color: black;
+ }
+  /*
+ Termina aqui
+ */
+  h1 {
+    font-size: 65px;
+  }
+  .texto1 {
+    width: 170vh;
+  }
+  .seccion-proyecto{
+    background: linear-gradient(rgb(228, 40, 65),rgb(255, 255, 255));
+    height: 100vh;
+    text-align: center;
+    }
+  h2 {
+    font-size: 50px;
+  }
+  .texto2{
+    margin-left: 50px;
+  }
+  .info {
+    margin-left: 50px;
+  }
+  
+    .seccion-recoleccion{
+    background: linear-gradient(rgb(94, 189, 178),rgb(255, 255, 255));
+    height: 100vh;
+   }
+   .formulario {
+    width: 100vh;
+    height: 68vh;
+   }
+   .imagen-form{
+     height: 68vh;
+    }
+   h4 {
+    font-size: 50px;
+    text-shadow: -3px -3px 2px rgb(240, 221, 170);
+   }
+    .seccion-mas-informacion{
+      background: linear-gradient(rgb(217, 245, 177),rgb(255, 255, 255));
+      height: 100vh;
+  }
+ }
+  
+  
+  
+ /*para tablets */
+ @media screen and (max-width: 1199px) and (min-width: 701px){
+  .tituloObj {
+    text-align: center;
+    padding-top: 10vh;
+  }
+  .tituloPro {
+    text-shadow: 5px 4px 2px rgb(224, 149, 8);
+  }
+  .objetivo1 {
+    border-bottom: 6px solid #e09508;
+    background-color: lightgrey;
+  }
+  .objetivoTitulo {
+    text-shadow: 3px 2px 1px rgb(224, 149, 8);
+  }
+  .objetivoTitulo2 {
+    text-shadow: 3px 2px 1px rgb(224, 149, 8);
+  }
+
+  .objetivo2 {
+    border-bottom: 6px solid #e09508;
+    background-color: lightgrey;
+    
+  }
+  .info1-5 {
+    padding-top: 20px;
+    font-family: 'Inconsolata', monospace;
+    font-size: 15px;
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+
+  }
+
+  .seccion-objetivos{
+    height: 120vh;
+    background: linear-gradient(rgb(248, 121, 248),rgb(255, 255, 255));
+  }
+   /*start animation*/
+.animated-shadow {
+  color: #ffffff;
+  font: normal 50px Varela Round, sans-serif;
+  height: 120px;
+  left: 0;
+  letter-spacing: 5px;
+  text-align: center;
+  text-transform: uppercase;
+  width: 100%;
+  animation: move linear 2000ms infinite;
+  z-index: 2
+ }
+ /*Animación para rotar las sombras*/
+ @keyframes move {
+  0% {
+    text-shadow:
+      2px -2px 0 #da0641,
+      1px -3px 0 #da0641,
+      2px -2px 0 #da0641,
+      1px -1px 0 #da0641,
+      -3px 4px 0 #13f1fc,
+      -2px 3px 0 #13f1fc,
+      -1px 2px 0 #13f1fc,
+      -1px 1px 0 #13f1fc
+    ;
+  }
+  25% {
+    text-shadow:
+      -3px -2px 0 #13f1fc,
+      -2px -2px 0 #13f1fc,
+      -3px -1px 0 #13f1fc,
+      -2px -0px 0 #13f1fc,
+      -3px 2px 0 #da0641,
+      -3px 1px 0 #da0641,
+      -2px 2px 0 #da0641,
+      -1px 1px 0 #da0641
+    ;
+  }
+  50% {
+    text-shadow:
+      -3px 1px 0 #da0641,
+      -2px 1px 0 #da0641,
+      -2px 2px 0 #da0641,
+      -1px 1px 0 #da0641,
+      1px -1px 0 #13f1fc,
+      1px -1px 0 #13f1fc,
+      2px -2px 0 #13f1fc,
+      1px -1px 0 #13f1fc
+    ;
+  }
+  75% {
+    text-shadow:
+      2px 1px 0 #13f1fc,
+      3px 3px 0 #13f1fc,
+      2px 2px 0 #13f1fc,
+      1px 1px 0 #13f1fc,
+      -4px -4px 0 #da0641,
+      -3px -3px 0 #da0641,
+      -2px -2px 0 #da0641,
+      -1px -1px 0 #da0641
+    ;
+  }
+  100% {
+    text-shadow:
+      1px -2px 0 #da0641,
+      3px -3px 0 #da0641,
+      2px -2px 0 #da0641,
+      1px -1px 0 #da0641,
+      -1px 3px 0 #13f1fc,
+      -3px 3px 0 #13f1fc,
+      -2px 2px 0 #13f1fc,
+      -1px 1px 0 #13f1fc
+    ;
+  }
+ }
+ /*fIN Aniamtion*/
+ 
+  .roww{
+    height: 100%;
+    width: 100%;
+  
+   }
+   .DaliFoto{
+    width: 450px;
+    height: 200px;
+    padding-top: 5px;
+   }
+   .fotodali {
+    width: 450px;
+    height: 200px;
+   }
+ .info4{
+  width: 30vh;
+  padding-top: 30px;
+  font-family: 'Inconsolata', monospace;
+  font-size: 20px;
+  text-shadow: 1px 1px 1px rgb(0, 0, 0);
+  
+ }
+ .texto4{
+  padding-top:60px;
+  text-shadow: 4px -2px 2px rgb(255, 0, 140);
+  text-align: center;
+ }
+ 
+  .info2{
+    font-family: 'Inconsolata', monospace;
+ font-size: 16px;
+ text-shadow: 1px 1px 1px rgb(0, 0, 0);
+ }
+  
+  .mano{
+    padding-top: 80px;
+    margin: 20px;
+    padding-left: 31vh;
+  
+  }
+   /*carrusel-Tablet*/
+ #carru {
+  font-size: 50px;
+  height: 5px;
+  text-align: center;
+  text-shadow: -3px -2px 2px rgb(69, 240, 134);
+  padding-top: 70px;
+  
+ }
+ #carouselExampleCaptions{
+ right: 0%;
+ }
+ .seccion-resultados{
+  background: linear-gradient(rgb(247, 222, 159),rgb(255, 255, 255));
+  height: 110vh;
+  }
+  
+   h2{
+     font-size: 40px;
+   }
+  .row{
+    padding-top: 20vh;
+  }
+  .texto2{
+    border-left: black 3px solid;
+    width: 400px;
+    height: 265px;
+    float: left;
+    text-shadow: -4px -2px 2px rgb(94, 189, 178);
+    padding-top: 50px;
+  
+  
+  }
+  .info{
+    border-right: black 3px solid;
+    width: 660px;
+    height: 265px;
+    float: left;
+    padding-top: 5px;
+    font-family: 'Inconsolata', monospace;
+    font-size: 18px;
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+  
+  }
+  /*
+  aqui termina*/
+  h1 {
+    font-size: 55px;
+  }
+  .texto1 {
+    width: 90vh;
+  }
+  .seccion-proyecto{
+    background: linear-gradient(rgba(221, 34, 34, 0.7),rgb(255, 255, 255));
+    height: 100vh;
+    text-align: center;
+    }
+  
+   .seccion-recoleccion{
+   background: linear-gradient(rgb(94, 189, 178),rgb(255, 255, 255));
+   height: 120vh;
+   }
+   .formulario {
+    width: 70vh;
+    height: 60vh;
+   }
+   h4 {
+    font-size: 30px;
+    text-shadow: -3px -3px 2px rgb(240, 221, 170);
+   }
+   .imagen-form{
+    height: 55vh;
+  }
+  
+  
+    .seccion-mas-informacion{
+      background: linear-gradient(rgb(217, 245, 177),rgb(255, 255, 255));
+      height: 100vh;
+  }
+ }
+ /*Para celulares*/
+ @media screen and (max-width: 700px){
+  .tituloObj {
+    text-align: center;
+    padding-top: 10vh;
+  }
+  .tituloPro {
+    text-shadow: 5px 4px 2px rgb(224, 149, 8);
+  }
+  .objetivo1 {
+    border-bottom: 6px solid #e09508;
+    background-color: lightgrey;
+  }
+  .objetivoTitulo {
+    text-shadow: 3px 2px 1px rgb(224, 149, 8);
+  }
+  .objetivoTitulo2 {
+    text-shadow: 3px 2px 1px rgb(224, 149, 8);
+  }
+
+  .objetivo2 {
+    border-bottom: 6px solid #e09508;
+    background-color: lightgrey;
+    
+  }
+  .info1-5 {
+    padding-top: 20px;
+    font-family: 'Inconsolata', monospace;
+    font-size: 15px;
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+
+  }
+
+  .seccion-objetivos{
+    height: 150vh;
+    background: linear-gradient(rgb(248, 121, 248),rgb(255, 255, 255));
+  }
+   /*start animation*/
+.animated-shadow {
+  color: #ffffff;
+  font: normal 40px Varela Round, sans-serif;
+  height: 150px;
+  left: 0;
+  letter-spacing: 5px;
+  text-align: center;
+  text-transform: uppercase;
+  width: 100%;
+  animation: move linear 2000ms infinite;
+  z-index: 2
+ }
+ /*Animación para rotar las sombras*/
+ @keyframes move {
+  0% {
+    text-shadow:
+      2px -2px 0 #da0641,
+      1px -3px 0 #da0641,
+      2px -2px 0 #da0641,
+      1px -1px 0 #da0641,
+      -3px 4px 0 #13f1fc,
+      -2px 3px 0 #13f1fc,
+      -1px 2px 0 #13f1fc,
+      -1px 1px 0 #13f1fc
+    ;
+  }
+  25% {
+    text-shadow:
+      -3px -2px 0 #13f1fc,
+      -2px -2px 0 #13f1fc,
+      -3px -1px 0 #13f1fc,
+      -2px -0px 0 #13f1fc,
+      -3px 2px 0 #da0641,
+      -3px 1px 0 #da0641,
+      -2px 2px 0 #da0641,
+      -1px 1px 0 #da0641
+    ;
+  }
+  50% {
+    text-shadow:
+      -3px 1px 0 #da0641,
+      -2px 1px 0 #da0641,
+      -2px 2px 0 #da0641,
+      -1px 1px 0 #da0641,
+      1px -1px 0 #13f1fc,
+      1px -1px 0 #13f1fc,
+      2px -2px 0 #13f1fc,
+      1px -1px 0 #13f1fc
+    ;
+  }
+  75% {
+    text-shadow:
+      2px 1px 0 #13f1fc,
+      3px 3px 0 #13f1fc,
+      2px 2px 0 #13f1fc,
+      1px 1px 0 #13f1fc,
+      -4px -4px 0 #da0641,
+      -3px -3px 0 #da0641,
+      -2px -2px 0 #da0641,
+      -1px -1px 0 #da0641
+    ;
+  }
+  100% {
+    text-shadow:
+      1px -2px 0 #da0641,
+      3px -3px 0 #da0641,
+      2px -2px 0 #da0641,
+      1px -1px 0 #da0641,
+      -1px 3px 0 #13f1fc,
+      -3px 3px 0 #13f1fc,
+      -2px 2px 0 #13f1fc,
+      -1px 1px 0 #13f1fc
+    ;
+  }
+ }
+ /*fIN Aniamtion*/
+ 
+  .roww{
+    height: 100%;
+    width: 100%;
+  
+   }
+   .DaliFoto{
+    width: 300px;
+    height: 100px;
+    padding-top: 5px;
+   }
+ .info4{
+  width: 20vh;
+  padding-top: 50px;
+  font-family: 'Inconsolata', monospace;
+  font-size: 19px;
+  text-shadow: 1px 1px 1px rgb(0, 0, 0);
+  text-align: center;
+  padding-left: 50px;
+ }
+ .texto4{
+  padding-top:60px;
+  text-shadow: 4px -2px 2px rgb(255, 0, 140);
+  text-align: center;
+ }
+  .info2{
+    font-family: 'Inconsolata', monospace;
+ font-size: 18px;
+ text-shadow: 1px 1px 1px rgb(0, 0, 0);
+ padding-top: 10px;
+ }
+  .mano{
+    padding-top: 20px;
+    padding-left: 100px;
+    margin: 0px;
+    height: 130px;
+  
+  }
+  /*Carrusel Empieza aqui*/
+ #carru {
+  font-size: 30px;
+  height :auto;
+  text-align: center;
+  text-shadow: -3px -3px 2px rgb(69, 240, 134);
+  padding-top: 80px;
+  
+ }
+ .seccion-resultados{
+  background: linear-gradient(rgb(247, 222, 159),rgb(255, 255, 255));
+  height: 110vh;
+ }
+ /*Termina aqui*/
+  h2{
+    font-size: 30px;
+  
+  }
+ .row{
+   padding-top: 10px;
+ }
+ .texto2{
+   border-top: rgb(94, 189, 178) 3px solid;
+   border-left: black 3px solid;
+   width: 300px;
+   height: 180px;
+   float: left;
+   text-shadow: -3px -2px 2px rgb(94, 189, 178);
+   padding-top: 50px;
+  }
+ .info{
+   border-bottom:rgb(94, 189, 178)  3px solid;
+   border-right: black 3px solid;
+   width: 290px;
+   height: 360px;
+   float: left;
+   padding-top: 0px;
+   font-family: 'Inconsolata', monospace;
+   font-size: 18px;
+   color: black;
+   text-shadow: 1px 1px 1px rgb(0, 0, 0);
+ }
+ /*Termina aqui*/
+  h1 {
+    font-size: 40px;
+  }
+  .texto1 {
+    width: 50vh;
+  }
+  .seccion-proyecto{
+    background: linear-gradient(rgba(221, 34, 34, 0.7),rgb(255, 255, 255));
+    height: 110vh;
+    text-align: center;
+    }
+   .seccion-recoleccion{
+   background: linear-gradient(rgb(94, 189, 178),rgb(255, 255, 255));
+   height: 200vh;
+   }
+   .formulario {
+    width: 70vh;
+    height: 60vh;
+   }
+   .imagen-form{
+     width: 100%;
+     height: 60vh;
+   }
+   h4 {
+    font-size: 30px;
+    text-shadow: -3px -2px 2px rgb(240, 221, 170);
+   }
+   .texto3{
+     text-align: center;
+     padding-top: 20px;
+   }
+  
+  
+  
+   .seccion-mas-informacion{
+    background: linear-gradient(rgb(217, 245, 177),rgb(255, 255, 255));
+    height: 100vh;
+  }
+  
+ }
+ 
